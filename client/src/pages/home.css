@@ -1,0 +1,141 @@
+body {
+  background-color: #dbdbdb;
+  margin: auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 50;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100px; /* adjust the width as needed */
+}
+.header-image {
+  width: 100%;
+  height: auto;
+}
+.title-container {
+  text-align: center;
+  margin-top: 50px;
+  /* color: #af4635; */
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.description-container {
+  display: flex;
+  flex: 1;
+  margin-top: 110px;
+  margin-left: 110px;
+  margin-right: 110px;
+  text-align: center;
+  color: aliceblue;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin: 20px auto;
+  color: #af4635;
+  font-family: Playfair Display, serif;
+}
+
+.description span {
+  color: #f0c000;
+  font-size: 1.6rem;
+}
+
+.featured-artist-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.featured-artist {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.artist-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color:#f0c000;
+  font-size: 50px;
+}
+
+.image-box {
+  width: 100%;
+  max-height: 500px;
+  padding: 10px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.images-container:hover .artist-box{
+  opacity: 0.3;
+}
+
+.images-container:hover .middle {
+  opacity: 3;
+}
+
+.sherpa-image-container:hover .overlay {
+  /* Show overlay only when container is hovered */
+  opacity: 1;
+}
+
+.sherpa-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute; /* Position absolute */
+  bottom: 0; /* Align at bottom */
+  left: 0; /* Align at left */
+  right: 0; /* Align at right */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Add transition effect */
+}

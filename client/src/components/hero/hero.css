@@ -1,0 +1,49 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  transition: background-image 1s ease-in-out;
+  /* border-bottom: 2px solid #f0c000; */
+  box-shadow: 3px 3px 2px rgba(0, 2, 2, 0.5);
+}
+
+.logo1 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Define the keyframe animation for the logo */
+@keyframes logo-click-animation {
+  5% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add the animation to the logo */
+.clicked {
+  animation-name: logo-click-animation;
+  animation-duration: 3s;
+}
+
+/* CSS for screens smaller than 768px */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,49 @@
+.about-section {
+    font-weight: 700;
+}
+
+.contact-section {
+    margin-top: 40px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 40px;
+}
+
+.contact-card {
+  background-color: black;
+  color: white;
+  width: 300px;
+  text-align: center;
+  margin: 15px 10px;
+  border-top-left-radius: 30%;
+  padding: 10px 25px;
+}
+
+.contact-card h3 {
+    color: #f0c000;
+}
+
+.contact-card a {
+    color: azure;
+}
+
+.contact-card a:hover {
+    color: #AA311D;
+}
+
+.contact-card:hover {
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-text {
+    width: 80%;
+}
